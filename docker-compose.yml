@@ -53,7 +53,7 @@ services:
     command: "node --env-file=.env build/server/server.cjs"
     restart: unless-stopped
     ports:
-      - "0.0.0.0:${GUI_PORT}:7777"
+      - "0.0.0.0:${GUI_PORT}:7776"
     volumes:
       - ./gui/build:/usr/src/app/build
       - ./config:/usr/src/app/config
